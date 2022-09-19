@@ -1,0 +1,25 @@
+class overload
+{
+	double r=5, l=4, b=6;
+
+	double circle()
+	{
+	  return 3.14*r*r;
+	}
+
+	double square()
+	{
+	  return l*l;
+	}
+	double rectangle()
+	{
+	  return l*b;
+	}
+	
+	public static void main (String args[])
+	{	
+	overload a= new overload();
+	System.out.println("Area of circle");
+	System.out.println(a.circle());
+	}
+}
