@@ -1,0 +1,70 @@
+import java.util.*;
+class emp
+{
+    
+    void get()
+    {	
+    Scanner sc = new Scanner(System.in);
+    String[] emp_name= new String[5];
+    int [] emp_no = new int[5];
+    String [] designation = new String[5];
+    int i;
+    for(i=0;i<5;i++)
+    {
+    	System.out.println("Enter name of an employee");
+    	emp_name[i]=sc.next();
+    	System.out.println("Enter number of an employee");
+    	emp_no[i]=sc.nextInt();
+    	System.out.println("Enter designation of an employee");
+    	designation[i]=sc.next();
+    }	
+   }
+}    
+    
+ class salary extends emp
+ {
+ void cl()
+ {
+    int i;
+    double [] basic_pay=new basic_pay[5];
+    double [] HRA=new HRA[5];  
+    double salary;
+    
+    salary = basic_pay + HRA*(basic_pay) + HRA;
+    for(i=0;i<5;i++)
+    {
+       System.out.println("Enter basic pay of an employee");
+       basic_pay=sc.nextDouble;
+       System.out.println("Enter HRA of an employee");
+       HRA=sc.nextDouble;    
+    
+    
+    }
+    
+    
+    
+    
+    for(i=0;i<5;i++)
+    {
+      System.out.println(" NAME:: " + emp_name[i]);  
+      System.out.println(" NUMBER:: " + emp_no[i]); 
+      System.out.println(" DESIGNATION :: "  + designation[i]);  
+      System.out.println(" BASIC PAY:: " + basic_pay[i]);
+      System.out.println(" HRA:: " + HRA[i]);  
+      System.out.println(" SALARY :: " + salary[i]);  
+    
+       
+    }	
+ }
+ }    
+ class payroll
+ {
+    public static void main(String args[])
+    {
+	emp p=new emp();
+	p.get();
+	salary s=new salary();    
+         s.cl();
+    }
+    
+ } 	
